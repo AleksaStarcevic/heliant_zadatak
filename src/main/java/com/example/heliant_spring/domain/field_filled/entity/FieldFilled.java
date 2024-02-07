@@ -17,7 +17,7 @@ import lombok.Setter;
 public class FieldFilled extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "id_form_filled",nullable = false)
