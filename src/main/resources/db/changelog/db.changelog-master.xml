@@ -11,5 +11,6 @@
     <include file="/db/changelog/scripts/create_field_filled_table.sql"/>
     <include file="/db/changelog/scripts/create_user_table.sql"/>
     <include file="/db/changelog/scripts/create_statistics_table.sql"/>
+    <include file="/db/changelog/scripts/seed_users.sql"/>
 
 </databaseChangeLog>
