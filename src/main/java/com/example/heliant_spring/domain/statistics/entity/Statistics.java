@@ -1,18 +1,16 @@
 package com.example.heliant_spring.domain.statistics.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Statistics {
 
     @Id
@@ -20,7 +18,7 @@ public class Statistics {
     private Integer id;
 
     @Column(name = "date",nullable = false)
-    private Date date;
+    private LocalDate date;
 
     @Column(name = "number_filled_forms", nullable = false)
     private Integer numberOfFilledForms;

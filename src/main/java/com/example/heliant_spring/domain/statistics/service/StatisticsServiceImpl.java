@@ -54,6 +54,11 @@ public class StatisticsServiceImpl implements StatisticsService{
         statisticsRepository.deleteById(id);
     }
 
+    @Override
+    public void saveEntity(Statistics statistics) {
+        statisticsRepository.save(statistics);
+    }
+
     public Statistics findStatisticsById(Integer id) throws NotFoundException {
         return statisticsRepository.findById(id).orElseThrow(() -> new NotFoundException("Statistics with " + id + " not found"));
     }
