@@ -12,5 +12,6 @@
     <include file="/db/changelog/scripts/create_user_table.sql"/>
     <include file="/db/changelog/scripts/create_statistics_table.sql"/>
     <include file="/db/changelog/scripts/seed_users.sql"/>
+    <include file="/db/changelog/scripts/alter_field_table.sql"/>
 
 </databaseChangeLog>
