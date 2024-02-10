@@ -1,6 +1,6 @@
 package com.example.heliant_spring.domain.field.entity;
 
-import com.example.heliant_spring.domain.base_entity.entity.BaseEntity;
+import com.example.heliant_spring.domain.base_entity.entity.AuditorEntity;
 import com.example.heliant_spring.domain.field_filled.entity.FieldFilled;
 import com.example.heliant_spring.domain.form.entity.Form;
 import jakarta.persistence.*;
@@ -16,7 +16,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Field extends BaseEntity {
+public class Field extends AuditorEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
