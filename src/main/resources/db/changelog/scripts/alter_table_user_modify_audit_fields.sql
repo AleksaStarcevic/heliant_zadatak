@@ -1,0 +1,6 @@
+-- liquibase formatted sql
+
+-- changeset aleksa:13
+ALTER table user
+MODIFY COLUMN created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+MODIFY COLUMN last_modified_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;

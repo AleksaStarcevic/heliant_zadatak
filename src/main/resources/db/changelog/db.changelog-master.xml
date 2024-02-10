@@ -17,5 +17,6 @@
     <include file="/db/changelog/scripts/alter_form_filled_table_add_audit_columns.sql"/>
     <include file="/db/changelog/scripts/alter_field_table_add_audit_columns.sql"/>
     <include file="/db/changelog/scripts/alter_field_filled_table_add_audit_columns.sql"/>
+    <include file="/db/changelog/scripts/alter_table_user_modify_audit_fields.sql"/>
 
 </databaseChangeLog>
